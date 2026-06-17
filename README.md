@@ -1,36 +1,195 @@
+# 🎬 CineLuxe — Flutter Movie Application
+
+![Flutter](https://img.shields.io/badge/Flutter-3.x-blue)
+![Dart](https://img.shields.io/badge/Dart-3.x-blue)
+![Firebase](https://img.shields.io/badge/Firebase-Enabled-orange)
+![Bloc](https://img.shields.io/badge/State%20Management-Cubit-blue)
+
+A modern Flutter movie application that allows users to browse movies, search for titles, view movie details, and discover recommendations through a clean and responsive user experience.
+
+Built with Flutter using Cubit (BLoC), REST APIs, Firebase integration, and a scalable project structure.
+
+---
+
+## 📱 Features
+
+- 🎬 Browse Movies
+- 🔍 Search Movies
+- 📄 View Movie Details
+- 💡 Movie Recommendations
+- ⚡ Fast API Integration
+- 🔥 Firebase Integration
+- 📱 Responsive UI
+- 🎨 Modern Design
+- 🚀 Smooth Navigation
+
+---
+
+## 📸 Screenshots
+
+### Login & Register Screen
+
+<img width="300" alt="Login Screen" src="https://github.com/user-attachments/assets/3e14ce20-6c4d-436f-a8e8-1a825da9e614" />
+<img width="300" alt="Register Screen" src="https://github.com/user-attachments/assets/0a7b7894-a311-4767-be4b-2ba6a31c1be3" />
+
+### Home Screen
+
+<img width="300" alt="Home Screen" src="https://github.com/user-attachments/assets/0c03bf10-0cb9-434d-bb7a-d2b1c3ffeb44" />
+
+### Movie Details Screen
+
+<img width="300" alt="Movie Details Screen" src="https://github.com/user-attachments/assets/0d52c940-353e-41b5-b843-ce187d93556c" />
+
+### Search Screen
+
+<img width="300" alt="Search Screen" src="https://github.com/user-attachments/assets/95f7058e-4d6a-4156-b0d9-d989c54a6ebf" />
+
+---
+
+## 🎥 Demo
+
+Watch a quick walkthrough of the application:
+
+
+https://github.com/user-attachments/assets/46a8c0b1-0eec-4d43-8882-ebe0ac7f3e8a
 
 
 
 
-# cineluxe
+---
 
-A new Flutter project.
+## 🏗️ Project Structure
 
-## Getting Started
+```text
+lib/
+├── api/
+│   ├── dio/
+│   ├── api_constants.dart
+│   └── end_point.dart
+│
+├── core/
+├── data/
+├── models/
+├── prefs/
+├── screens/
+├── utils/
+├── widgets/
+│
+├── firebase_options.dart
+└── main.dart
+```
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🧠 Architecture
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+The application follows a layered architecture:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```text
+Presentation Layer
+      ↓
+Cubit / BLoC
+      ↓
+API Layer (Dio)
+      ↓
+REST API
+```
 
+### Benefits
 
-<img width="1264" height="2604" alt="Screenshot_20260616_020213_com_example_cineluxe_MainActivity" src="https://github.com/user-attachments/assets/fab70614-24b2-4432-a148-5243ddd59da3" />
+- Clean Code
+- Separation of Concerns
+- Scalability
+- Maintainability
+- Easy Testing
 
-<img width="1264" height="2604" alt="Screenshot_20260616_020908_com_example_cineluxe_MainActivity" src="https://github.com/user-attachments/assets/9459be2d-ddaf-4ef2-be96-5d70747a6f9f" />
-<img width="1264" height="2577" alt="Screenshot_20260616_020805_com_example_cineluxe_MainActivity" src="https://github.com/user-attachments/assets/4ff9b8b6-5ceb-4198-8722-f30981be959f" />
-<img width="1264" height="2617" alt="Screenshot_20260616_020752_com_example_cineluxe_MainActivity" src="https://github.com/user-attachments/assets/4493e7f0-62fa-4647-8a65-734307cb6e46" />
-<img width="1264" height="2584" alt="Screenshot_20260616_020227_com_example_cineluxe_MainActivity" src="https://github.com/user-attachments/assets/31cd7102-45c0-4012-ab55-9458ebadd8e3" />
+---
 
+## 🛠️ Tech Stack
 
+- Flutter
+- Dart
+- Cubit (BLoC)
+- Dio
+- Firebase
+- REST API
+- Shared Preferences
 
+---
 
+## 📦 Packages
 
+| Package | Usage |
+|----------|----------|
+| flutter_bloc | State Management |
+| dio | API Calls |
+| shared_preferences | Local Storage |
+| firebase_core | Firebase Setup |
+| firebase_auth | Authentication |
+| cloud_firestore | Database |
+| google_sign_in | Google Authentication |
+| cached_network_image | Image Caching |
 
+---
 
+## 🔑 API
 
+### Base URL
+
+```dart
+https://movies-api.accel.li/api/v2/
+```
+
+### Endpoints
+
+```dart
+list_movies.json
+movie_details.json
+movie_suggestions.json
+```
+
+---
+
+## 🚀 Getting Started
+
+### Clone Repository
+
+```bash
+git clone https://github.com/engkareemmohamed12-max/CineLuxe.git
+```
+
+### Install Dependencies
+
+```bash
+flutter pub get
+```
+
+### Run Project
+
+```bash
+flutter run
+```
+
+---
+
+## 💼 Skills Demonstrated
+
+- State Management with Cubit
+- REST API Integration
+- Firebase Integration
+- Responsive UI Design
+- Layered Architecture
+- Error Handling
+- Reusable Widgets
+- Code Organization
+
+---
+
+## 👨‍💻 Developer
+
+**Karim Mohamed**
+
+### Connect with me
+
+- LinkedIn: [Karim Mohamed](https://www.linkedin.com/in/kareem-mohamed-flutter/)
+- GitHub: [engkareemmohamed12-max](https://github.com/engkareemmohamed12-max)
